@@ -1,0 +1,74 @@
+.panel-heading {
+  background-color: #EEEEEE;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #7E8998;
+}
+
+body {
+  color: #7E8998;
+  background-color: #EEEEEE;
+}
+
+.sidebar_links li {
+  margin: 10px;
+}
+
+.panel {
+  background-color: white;
+  height: 100%;
+}
+
+.panel_container {
+  margin-top: 5%;
+}
+
+.container {
+  width: 70%;
+}
+
+tr:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+
+.pull-right {
+  float: right;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.rightButton {
+  float: right;
+}
+
+.buttonContain {
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-box {
+  border: 1px solid #7E8998;
+}
+
+.btn-icon {
+  padding: 15px;
+
+}
+
+
+.tab-pane {
+  background-color: white;
+}
