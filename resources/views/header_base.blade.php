@@ -5,10 +5,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
-				 {{$customers_header['header_title']}}
-					<span class="pull-right">
-						<a href="#" data-toggle="modal" data-target="{{$customers_header['data_target']}}" class="btn btn-success btn-icon btn-xs"><i class="fa fa-plus"></i></a>
-					</span>
+				
 				</h4>
 			</div>
 			<div class="panel-body">
@@ -25,13 +22,3 @@
 
 <table>
 
-    <thead>
-      @foreach ($customers_header['column_names'] as $column)
-
-        <th class = "footable-sortable" style = "display: table-cell">
-          {{$column}}
-        </th>
-
-      @endforeach
-
-    </thead>
