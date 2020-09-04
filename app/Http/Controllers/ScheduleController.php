@@ -62,7 +62,9 @@ class ScheduleController extends Controller
      */
     public function show($id)
     {
-        //
+        $single_appointment = \App\Schedule::where('id', $id)->first()->toArray();
+        $single_appointment = $this->arrange_appointment($single_appointment);
+        return $single_appointment;
     }
 
     /**
@@ -114,5 +116,17 @@ class ScheduleController extends Controller
         \App\Schedule::where('id', '=', $id)->delete();
         \App\ScheduleUser::where('schedule_id', '=', $id)->delete();
         
+    }
+
+    //converts time stamps to readable date time
+    public function arrange_appointment($appointment) {
+        $appointment['start_hour'] = date('H:i:s', $appointment['start']);
+        $appointment['end_hour'] = date('H:i:s', $appointment['end']);
+        $appointment['start_date'] = date('m/d/Y', $appointment['start']);
+        $appointment['end_date'] = date('m/d/Y', $appointment['end']);
+        $appointment['start'] = date('m/d/Y H:i:s', $appointment['start']);
+        $appointment['end'] = date('m/d/Y H:i:s', $appointment['end']);
+        
+        return $appointment;
     }
 }

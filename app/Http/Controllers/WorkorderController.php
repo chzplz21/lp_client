@@ -76,8 +76,20 @@ class WorkorderController extends Controller
       ->get()
       ->toArray();     
       
-
       return $doc_lineitems;
+
+    }
+
+
+    public function get_appointments($id) {
+      
+      $appointments = \App\Schedule::where('doc_id', $id)->where('doc_type', 'workorder')->get()->toArray();
+      $schedule_controller = new ScheduleController;
+      foreach($appointments as &$appointment):
+        $appointment = $schedule_controller->arrange_appointment($appointment);
+      endforeach;
+
+      return $appointments;
 
     }
 

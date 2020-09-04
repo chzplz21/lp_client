@@ -14,9 +14,9 @@
 <script>
     
     export default {
+      props: ['table_headers'], 
       data: function () {
-        return {
-          table_headers: ['Name', "Cost", "Quantity"],
+        return {         
           big_array: null,
           ready: false
         }

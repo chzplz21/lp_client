@@ -32,6 +32,7 @@
 </template>
 
 <script>
+/*
     import create_modal from './create_modal.vue';
 
     export default {
@@ -47,6 +48,6 @@
         
         
     }
-
+*/
 
 </script>

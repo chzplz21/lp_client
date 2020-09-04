@@ -14,8 +14,8 @@ Vue.component("normal-tabs", {
     template: "<doc-tabs v-bind:tabs='tabs' v-bind:currentTab='currentTab' v-bind:activatedComponent='activatedComponent	'></doc-tabs>",
     data: function () {
         return {
-        currentTab: 'Lineitems',
-        activatedComponent: 'lineitems',
+        currentTab: 'Labor',
+        activatedComponent: 'workorder-labor',
         tabs: NormalTabs
 
         }

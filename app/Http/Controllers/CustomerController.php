@@ -34,8 +34,7 @@ class CustomerController extends Controller
           
   }   
 
-  public function update(Request $request, $id) {
-   
+  public function update(Request $request, $id) {   
     $input = $request->all();
     $updateCustomer = \App\Customers::find($id)->update($input);
 

@@ -1,6 +1,6 @@
 <!-- Modal -->
 <template> 
-    <div id="createModal" class="modal" role="dialog">
+    <div id="editModal" class="modal" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -21,7 +21,7 @@
 
     //import CreateCustomer from './create_customer.vue';
      export default {  
-         name: "create_modal",
+         name: "edit-modal",
     
     }
     

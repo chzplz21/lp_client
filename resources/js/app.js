@@ -26,14 +26,17 @@ Vue.use(require('bootstrap-vue')); // Telling Vue to use this in whole applicati
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('all_table', require('./components/all_table.vue').default);
-Vue.component('create_modal', require('./components/create_modal.vue').default);
+Vue.component('create-edit-modal', require('./components/create-edit-modal.vue').default);
 Vue.component('create_customer', require('./components/create_customer.vue').default);
 Vue.component('create_user', require('./components/create_user.vue').default);
 Vue.component('tab-info', require('./components/tab-info.vue').default);
 Vue.component('tab-lineitems', require('./components/tab-lineitems.vue').default);
+Vue.component('tab-labor', require('./components/tab-labor.vue').default);
 Vue.component('tab_archive', require('./components/tab_archive.vue').default);
-Vue.component('info-panel', require('./components/info-panel.vue').default);
+Vue.component('tab_archive', require('./components/tab_archive.vue').default);
 Vue.component('doc-tabs', require('./components/doc-tabs.vue').default);
+Vue.component('appointment-modal', require('./components/appointment-modal.vue').default);
+Vue.component('edit-modal', require('./components/edit-modal.vue').default);
 
 
 

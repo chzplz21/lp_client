@@ -32,7 +32,8 @@
 </template>
 
 <script>
-    import create_modal from './create_modal.vue';
+/*
+    import create-edit-modal from './create-edit-modal.vue';
 
     export default {
         props: ['dog_name'],  
@@ -42,11 +43,11 @@
           }
         },
         components: {
-           'create-modal': create_modal
+           'create-edit-modal': create-edit-modal
         },
         
         
     }
-
+*/
 
 </script>

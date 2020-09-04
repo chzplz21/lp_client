@@ -35,6 +35,7 @@ Route::get('/workorders/{id}/info_tab', 'WorkorderController@info_tab');
 Route::get('/workorders/{id}/customer_info', 'WorkorderController@customer_info');
 Route::get('/workorders/{id}/get_single_workorder', 'WorkorderController@get_single_workorder');
 Route::get('/workorders/{id}/get_lineitems', 'WorkorderController@get_lineitems');
+Route::get('/workorders/{id}/get_appointments', 'WorkorderController@get_appointments');
 /*
 Route::get('/workorders', 'Workorders@GetAll')->name('create_workorder');
 Route::post('/workorders/create', 'Workorders@Create')->name('create_workorder');
